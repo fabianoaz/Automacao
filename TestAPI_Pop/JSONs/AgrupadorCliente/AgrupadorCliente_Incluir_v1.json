@@ -1,0 +1,13 @@
+{
+  "codigoEstabelecimento": 1,
+  "descricao": "Inserido via Automacao API",
+  "mostraAgrupado": true,
+  "clientes": [
+    {
+      "codigoCliente": 498
+    },
+    {
+      "codigoCliente": 715
+    }
+  ]
+}

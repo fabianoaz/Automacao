@@ -1,0 +1,12 @@
+{
+  "codigoEstabelecimento": 1,
+  "id": 4,
+  "descricao": "Alterado via Postman",
+  "mostraAgrupado": false,
+  "clientes": [
+    {
+      "codigoCliente": 715
+    }
+  ],
+  "rowVersion": "AAAAAAOjYcs="
+}

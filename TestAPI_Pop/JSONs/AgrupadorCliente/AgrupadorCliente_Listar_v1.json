@@ -1,0 +1,12 @@
+{
+  "query": {
+    "codigoEstabelecimento": 1,
+    "codigoAgrupador": 1,
+    "descricao": "teste",
+    "cadastroCompleto": true
+  },
+  "pagination": {
+    "page": 0,
+    "pagesize": 1
+  }
+}

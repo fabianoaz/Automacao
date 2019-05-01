@@ -20,6 +20,7 @@ namespace TestAPI_Pop
         public string CodigoEmpresa = "CodigoEmpresa=1";
         public string CodigoEstabelecimento = "CodigoEstabelecimento=1";
         public string CodigoFormaPagamento = "CodigoFormaPagamento=11";
+        public string CodigoAgrupador = "codigoAgrupador = 1";
         public string ContentType = "application/json";
 
         public static string CarregaJson(string arquivo)
