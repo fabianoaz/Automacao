@@ -1,34 +1,41 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TesteAPI_Pop;
 
 namespace TestAPI_Pop
-{
-    [TestClass]
-    public class RunTest : Testes 
     {
-        UnidadeFederativa UF = new UnidadeFederativa();
-        FormasPagamento FPAG = new FormasPagamento();
+    [TestClass]
+    public class RunTest : Metodos
+        {
+        Apis api = new Apis();
         // Geral geral = new Geral(); -- Classe Geral é herdada na classe Teste
-       // Testes testes = new Testes(); -- Classe Teste é herdada na classe RunTest
+        // Testes testes = new Testes(); -- Classe Teste é herdada na classe RunTest
 
         [TestMethod]
         public void Run()
-        {
-            
-            POST(FPAG.POST_Listar_v1, Url, Tokenpass, "", "", FPAG.POST_Listar_v1_Body);
+            {
+
+        #region Unidade Federativa
+
+            GET(api.UnidadeFederativa_MontarComboUF_v1, Url, Tokenpass, "", "");
+
+        #endregion
+
+        #region Formas de Pagamento
+
+            POST(api.FormasPagamento_Listar_v1, Url, Tokenpass, "", "", CarregaJson(@"..\..\JSONs\FormasPagamento_Listar_v1_Body.json"));
 
             // Selecionar da API de Formas de pagamentto está com erro
-            // GET(FPAG.GET_Selecionar_v1, Url, Tokenpass, CodigoEstabelecimento, CodigoFormaPagamento);
+            // GET(api.FormasPagamento_GET_Selecionar_v1, Url, Tokenpass, CodigoEstabelecimento, CodigoFormaPagamento);
 
-            GET(FPAG.GET_MontarCombo_v1, Url, Tokenpass, cnpjEstabelecimento,"");
+            GET(api.FormasPagamento_MontarCombo_v1, Url, Tokenpass, cnpjEstabelecimento, "");
 
-            POST(FPAG.POST_Incluir_v1, Url, Tokenpass, "", "", FPAG.POST_Incluir_v1_Body);
+            POST(api.FormasPagamento_Incluir_v1, Url, Tokenpass, "", "", CarregaJson(@"..\..\JSONs\FormasPagamento_Incluir_v1_Body.json"));
+
+            PUT(api.FormasPagamento_Alterar_v1, Url, Tokenpass, "", "", CarregaJson(@"..\..\JSONs\FormasPagamento_Alterar_v1_Body.json"));
+
+            DELETE(api.FormasPagamento_Excluir_v1, Url, Tokenpass, cnpjEstabelecimento, CodigoFormaPagamento);
             
-            PUT(FPAG.PUT_Alterar_v1, Url, Tokenpass, "", "", FPAG.PUT_Alterar_v1_Body);
-            
-            DELETE(FPAG.DEL_Excluir_v1, Url, Tokenpass, cnpjEstabelecimento, CodigoFormaPagamento);
-            
+        #endregion
+            }
         }
     }
-}

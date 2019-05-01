@@ -1,0 +1,11 @@
+{
+  "query": {
+    "cnpjEstabelecimento": "17898787000153",
+    "somenteAtivos": true,
+    "cadastroCompleto": false
+  },
+  "pagination": {
+    "page": 0,
+    "pagesize": 20
+  }
+}

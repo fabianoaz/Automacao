@@ -1,0 +1,20 @@
+{
+  "cnpjEstabelecimento": "17898787000153",
+  "codigo": -11,
+  "descricao": "ERA PREMMIA - VI API",
+  "tipo": { "codigo": 11 },
+  "avisoSangria": false,
+  "interna": true,
+  "opcoesPagamento": { "codigo": 1 },
+  "parcelamento": {
+    "carenciaPrimeiraParcela": 0,
+    "diasCorridos": false,
+    "juros": 0,
+    "numeroParcelas": 1,
+    "periodicidade": 0,
+    "primeiraParcelaMaior": false
+  },
+  "inativo": false,
+  "diaRecebimento": 1,
+  "rowVersion": "AAAAAAATG0w="
+}
