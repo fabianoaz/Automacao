@@ -8,22 +8,24 @@ namespace TestAPI_Pop
 
     public class Metodos : Geral
         {
+        
         StringBuilder responseString = new StringBuilder();
 
-        public void POST(string UrlApi, string _UrlBase, string _Tokenpass, string _key1, string _key2, string _body)
+        public void POST(string UrlApi, string _key1, string _key2, string _body)
             {
-            _UrlBase = _UrlBase + UrlApi;
+
+            UrlBase = UrlBase + UrlApi;
 
             if (_key1 != "")
                 {
-                _UrlBase += _key1;
+                UrlBase += _key1;
                 }
             if (_key2 != "")
                 {
-                _UrlBase += "&" + _key2;
+                UrlBase += "&" + _key2;
                 }
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_UrlBase);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(UrlBase);
 
             request.Method = "POST";
 
@@ -31,7 +33,7 @@ namespace TestAPI_Pop
 
             request.Credentials = CredentialCache.DefaultCredentials;
 
-            request.Headers.Set("Tokenpass", _Tokenpass);
+            request.Headers.Set("Tokenpass", Tokenpass);
 
             var envio = Encoding.UTF8.GetBytes(_body);
 
@@ -71,24 +73,24 @@ namespace TestAPI_Pop
                 }
             }
 
-        public void GET(string UrlApi, string _UrlBase, string _Tokenpass, string _key1, string _key2)
+        public void GET(string UrlApi, string _key1, string _key2)
             {
-            _UrlBase = _UrlBase + UrlApi;
+            UrlBase = UrlBase + UrlApi;
 
             if (_key1 != "")
                 {
-                _UrlBase += _key1;
+                UrlBase += _key1;
                 }
             if (_key2 != "")
                 {
-                _UrlBase += "&" + _key2;
+                UrlBase += "&" + _key2;
                 }
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_UrlBase);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(UrlBase);
 
             request.Credentials = CredentialCache.DefaultCredentials;
 
-            request.Headers.Set("Tokenpass", _Tokenpass);
+            request.Headers.Set("Tokenpass", Tokenpass);
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
@@ -111,20 +113,20 @@ namespace TestAPI_Pop
                 }
             }
 
-        public void PUT(string UrlApi, string _UrlBase, string _Tokenpass, string _key1, string _key2, string _body)
+        public void PUT(string UrlApi, string _key1, string _key2, string _body)
             {
-            _UrlBase = _UrlBase + UrlApi;
+            UrlBase = UrlBase + UrlApi;
 
             if (_key1 != "")
                 {
-                _UrlBase += _key1;
+                UrlBase += _key1;
                 }
             if (_key2 != "")
                 {
-                _UrlBase += "&" + _key2;
+                UrlBase += "&" + _key2;
                 }
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_UrlBase);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(UrlBase);
 
             request.Method = "PUT";
 
@@ -132,7 +134,7 @@ namespace TestAPI_Pop
 
             request.Credentials = CredentialCache.DefaultCredentials;
 
-            request.Headers.Set("Tokenpass", _Tokenpass);
+            request.Headers.Set("Tokenpass", Tokenpass);
 
             var envio = Encoding.UTF8.GetBytes(_body);
 
@@ -163,26 +165,26 @@ namespace TestAPI_Pop
                 }
             }
 
-        public void DELETE(string UrlApi, string _UrlBase, string _Tokenpass, string _key1, string _key2)
+        public void DELETE(string UrlApi, string _key1, string _key2)
             {
-            _UrlBase = _UrlBase + UrlApi;
+            UrlBase = UrlBase + UrlApi;
 
             if (_key1 != "")
                 {
-                _UrlBase += _key1;
+                UrlBase += _key1;
                 }
             if (_key2 != "")
                 {
-                _UrlBase += "&" + _key2;
+                UrlBase += "&" + _key2;
                 }
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_UrlBase);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(UrlBase);
 
             request.Credentials = CredentialCache.DefaultCredentials;
 
             request.Method = "DELETE";
 
-            request.Headers.Set("Tokenpass", _Tokenpass);
+            request.Headers.Set("Tokenpass", Tokenpass);
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
@@ -204,7 +206,6 @@ namespace TestAPI_Pop
                 responseString.Clear();
                 }
             }
-
-
         }
+
     }
