@@ -1,0 +1,23 @@
+{
+  "query": {
+    "nome": "",
+    "apelido": "",
+    "cnpjCpf": "",
+    "inscricaoEstadual": "",
+    "tipo": [],
+    "classificacao": [],
+    "categoria": [],
+    "uf": [],
+    "cidade": [],
+    "cep": 0,
+    "endereco": "",
+    "somenteAtivos": true,
+    "cnpjEstabelecimento": "17898787000153",
+    "cadastroCompleto": true,
+    "search": "1"
+  },
+  "pagination": {
+    "page": 0,
+    "pagesize": 1500
+  }
+}

@@ -3,11 +3,11 @@
     public class Apis
         {
         #region AgrupadorCliente
-        public string AgrupadorCliente_Listar_v1 = "/v1/AgrupadorCliente/Listar";
-        public string AgrupadorCliente_Selecionar_v1 = "/v1/AgrupadorCliente/Selecionar?";// Variáveis da API : "codigoEstabelecimento=1&codigoAgrupador=1
-        public string AgrupadorCliente_Incluir_v1 = "/v1/AgrupadorCliente/Incluir";
-        public string AgrupadorCliente_Alterar_v1 = "/v1/AgrupadorCliente/Alterar";
-        public string AgrupadorCliente_Excluir_v1 = "/v1/AgrupadorCliente/Excluir?"; // Variáveis da API : "codigoEstabelecimento=1&codigoAgrupador=1
+        public string POST_AgrupadorCliente_Listar_v1 = "/v1/AgrupadorCliente/Listar";
+        public string GET_AgrupadorCliente_Selecionar_v1 = "/v1/AgrupadorCliente/Selecionar?";// Variáveis da API : "codigoEstabelecimento=1&codigoAgrupador=1
+        public string POST_AgrupadorCliente_Incluir_v1 = "/v1/AgrupadorCliente/Incluir";
+        public string PUT_AgrupadorCliente_Alterar_v1 = "/v1/AgrupadorCliente/Alterar";
+        public string DEL_AgrupadorCliente_Excluir_v1 = "/v1/AgrupadorCliente/Excluir?"; // Variáveis da API : "codigoEstabelecimento=1&codigoAgrupador=1
         #endregion
         #region Almoxarifado
         public string Almoxarifado_Listar_v1 = "/v1/Almoxarifado/Listar?"; // Variáveis da API : "codigoEstabelecimento=1
@@ -236,17 +236,17 @@
         public string Ncm_Listar_v1 = "/v1/Ncm/Listar";
         #endregion
         #region Pessoa
-        public string Pessoa_Listar_v1 = "/v1/Pessoa/Listar";
-        public string Pessoa_Selecionar_v1 = "/v1/Pessoa/Selecionar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=745
-        public string Pessoa_Incluir_v1 = "/v1/Pessoa/Incluir";
-        public string Pessoa_Alterar_v1 = "/v1/Pessoa/Alterar";
-        public string Pessoa_Excluir_v1 = "/v1/Pessoa/Excluir?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=748
-        public string Pessoa_MontarCombo_v1 = "/v1/Pessoa/MontarCombo?"; // Variáveis da API : cnpjEstabelecimento=17898787000153&classificacaoPessoa=3&codigoCategoria=0
-        public string Pessoa_MontarComboTipo_v1 = "/v1/Pessoa/MontarComboTipo";
-        public string Pessoa_MontarComboClassificacao_v1 = "/v1/Pessoa/MontarComboClassificacao";
-        public string Pessoa_MontarComboCategoria_v1 = "/v1/Pessoa/MontarComboCategoria?"; // Variáveis da API : classificacaoPessoa=2
-        public string Pessoa_Restaurar_v1 = "/v1/Pessoa/Restaurar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=748
-        public string Pessoa_Verificar_v1 = "/v1/Pessoa/verificar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&cpfCnpj=745
+        public string POST_Pessoa_Listar_v1 = "/v1/Pessoa/Listar";
+        public string GET_Pessoa_Selecionar_v1 = "/v1/Pessoa/Selecionar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=745
+        public string POST_Pessoa_Incluir_v1 = "/v1/Pessoa/Incluir";
+        public string PUT_Pessoa_Alterar_v1 = "/v1/Pessoa/Alterar";
+        public string DEL_Pessoa_Excluir_v1 = "/v1/Pessoa/Excluir?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=748
+        public string GET_Pessoa_MontarCombo_v1 = "/v1/Pessoa/MontarCombo?"; // Variáveis da API : cnpjEstabelecimento=17898787000153&classificacaoPessoa=3&codigoCategoria=0
+        public string GET_Pessoa_MontarComboTipo_v1 = "/v1/Pessoa/MontarComboTipo";
+        public string GET_Pessoa_MontarComboClassificacao_v1 = "/v1/Pessoa/MontarComboClassificacao";
+        public string GET_Pessoa_MontarComboCategoria_v1 = "/v1/Pessoa/MontarComboCategoria?"; // Variáveis da API : classificacaoPessoa=2
+        public string GET_Pessoa_Restaurar_v1 = "/v1/Pessoa/Restaurar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&codigo=748
+        public string GET_Pessoa_Verificar_v1 = "/v1/Pessoa/verificar?"; // Variáveis da API : cnpjEstabelecimento=06224535000122&cpfCnpj=745
         #endregion
         #region PerfilAcesso
         public string PerfilAcesso_Listar_v1 = "/v1/PerfilAcesso/Listar";

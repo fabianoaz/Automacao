@@ -75,6 +75,8 @@
     <None Include="JSONs\FormasPagamento\FormasPagamento_Alterar_v1_Body.json" />
     <None Include="JSONs\FormasPagamento\FormasPagamento_Incluir_v1_Body.json" />
     <None Include="JSONs\FormasPagamento\FormasPagamento_Listar_v1_Body.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Listar_v1.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

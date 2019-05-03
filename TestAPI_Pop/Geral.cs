@@ -19,10 +19,15 @@ namespace TestAPI_Pop
         public string cnpjEstabelecimento = "cnpjEstabelecimento=17898787000153";
         public string CNPJ = "CNPJ=17898787000153";
         public string CodigoEmpresa = "CodigoEmpresa=1";
-        public string CodigoEstabelecimento = "CodigoEstabelecimento=1";
+        public string CodigoEstabelecimento = "codigoEstabelecimento=1";
         public string CodigoFormaPagamento = "CodigoFormaPagamento=11";
-        public string CodigoAgrupador = "codigoAgrupador = 1";
+        public string CodigoAgrupador = "codigoAgrupador=1";
         public string ContentType = "application/json";
+
+        public void ResetUrl()
+        {
+            UrlBase = "http://qa-postopop.inovapostos.com.br/LxApi";
+        }
 
         public static string CarregaJson(string arquivo)
             {
