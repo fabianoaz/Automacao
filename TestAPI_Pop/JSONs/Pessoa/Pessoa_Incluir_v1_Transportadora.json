@@ -1,0 +1,32 @@
+{
+  "cnpjEstabelecimento": "17898787000153",
+  "cnpjCpf": "48129452000102",
+  "inscricaoEstadual": "5744503176",
+  "inscricaoMunicipal": "",
+  "nome": "Transportador Incluido Via Automacao",
+  "apelido": "Automacao de Teste",
+  "isentoICMS": false,
+  "dataNascimento": "1979-11-15",
+  "identidade": "1234",
+  "orgaoEmissor": "SSP",
+  "emiteNFe": false,
+  "inativo": false,
+  "tipo": { "codigo": 0 },
+  "classificacoes": [
+    {
+      "codigo": 4
+    }
+  ],
+  "endereco": {
+    "codigoUF": 43,
+    "codigoMunicipio": 4314902,
+    "endereco": "RUA OLAVO BARRETO VIANA",
+    "numero": 63,
+    "complemento": "4º ANDAR",
+    "referencia": "PRÓXIMO AO SHOPPING MOINHOS",
+    "bairro": "MOINHOS DE VENTO",
+    "cep": "95700070"
+  },
+  "contatos": [],
+  "site": "www.linx.com.br"
+}

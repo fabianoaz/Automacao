@@ -75,7 +75,11 @@
     <None Include="JSONs\FormasPagamento\FormasPagamento_Alterar_v1_Body.json" />
     <None Include="JSONs\FormasPagamento\FormasPagamento_Incluir_v1_Body.json" />
     <None Include="JSONs\FormasPagamento\FormasPagamento_Listar_v1_Body.json" />
-    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1_Cliente.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1_Fabricante.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1_Todos.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1_Transportadora.json" />
+    <None Include="JSONs\Pessoa\Pessoa_Incluir_v1_Fornecedor.json" />
     <None Include="JSONs\Pessoa\Pessoa_Listar_v1.json" />
     <None Include="packages.config" />
   </ItemGroup>

@@ -18,6 +18,6 @@
   },
   "pagination": {
     "page": 0,
-    "pagesize": 1500
+    "pagesize": 10
   }
 }

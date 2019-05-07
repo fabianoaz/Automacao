@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestAPI_Pop
-{
+    {
     [TestClass]
     public class RunTest : Metodos
     {
@@ -11,12 +10,28 @@ namespace TestAPI_Pop
         [TestMethod]
         public void Pessoa()
         {
-            POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1.json"),false);
+            // Incluir Cliente
+            //POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1_Cliente.json"), false);
+            // Incluir Fornecedor
+            POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1_Fornecedor.json"), false);
+            // Incluir Fabricante
+            POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1_Fabricante.json"), false);
+            // Incluir Transportadora    
+            POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1_Transportadora.json"), false);
+            // Incluir Pessoa com Todos Perfis    
+            // POST(api.POST_Pessoa_Incluir_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Incluir_v1_Todos.json"), false);
 
-            GET(api.GET_Pessoa_MontarCombo_v1, cnpjEstabelecimento,"classificacaoPessoa=3", "codigoCategoria=0", false, "Pessoa Incluída Via Automacao de Teste", false);
+            // Monta Combo - Lista Clientes
+            GET(api.GET_Pessoa_MontarCombo_v1, cnpjEstabelecimento,"classificacaoPessoa=1", "codigoCategoria=", false, "Via Automacao", false);
+            // Monta Combo - Lista Fornecedores
+            GET(api.GET_Pessoa_MontarCombo_v1, cnpjEstabelecimento, "classificacaoPessoa=2", "codigoCategoria=0", false, "Via Automacao", false);
+            // Monta Combo - Lista Fabricantes
+            GET(api.GET_Pessoa_MontarCombo_v1, cnpjEstabelecimento, "classificacaoPessoa=5", "codigoCategoria=4", false, "Via Automacao", false);
+            // Monta Combo - Lista Transportadoras
+            GET(api.GET_Pessoa_MontarCombo_v1, cnpjEstabelecimento, "classificacaoPessoa=4", "codigoCategoria=", false, "Via Automacao", false);
 
-            POST(api.POST_Pessoa_Listar_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Listar_v1.json"), false);
-        }
+            //    POST(api.POST_Pessoa_Listar_v1, "", "", CarregaJson(@"..\..\JSONs\Pessoa\Pessoa_Listar_v1.json"), false);
+            }
 
         [TestMethod]
         public void AgrupadorCliente()
